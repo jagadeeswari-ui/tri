@@ -1,0 +1,211 @@
+/* Fade-in animation for the calculator */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ce3675; /* Baby pink background */
+    animation: fadeIn 1s ease-in-out;
+}
+
+.calculator {
+    width: 400px;
+    background: #e52b69; /* Soft pink */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(255, 105, 180, 0.3);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Display styling */
+.display {
+    width: 100%;
+    height: 60px;
+    background: #bd5970; /* Light pink */
+    color: #333;
+    text-align: right;
+    font-size: 1.5em;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+#inputDisplay {
+    font-size: 1em;
+    color: #555;
+}
+
+#outputDisplay {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+/* Buttons Grid */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+}
+
+/* Button styling */
+button {
+    height: 50px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #ae5691; /* Light baby pink */
+    color: black;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+/* Bounce effect on hover */
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+button:hover {
+    background: #ffb6c1; /* Soft pink hover */
+    box-shadow: 0px 4px 10px rgba(255, 105, 180, 0.5);
+    animation: bounce 0.3s ease-in-out;
+}
+
+/* Enter button with unique hover effect */
+.enter {
+    grid-column: span 2;
+    background: #ff85a2; /* Slightly darker pink */
+    color: white;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.enter:hover {
+    background: #ff6f91; /* Vibrant pink */
+    transform: scale(1.08);
+}
+/* Background with a baby pink gradient */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #de618b, #e1a2b8, #e8d7dd); /* Baby pink gradient */
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Fade-in animation for the calculator */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.calculator {
+    width: 400px;
+    background: #e85c8a; /* Soft pink */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(255, 105, 180, 0.3);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Display styling */
+.display {
+    width: 100%;
+    height: 70px;
+    background: #ffd1dc; /* Light pink */
+    color: #333;
+    text-align: right;
+    font-size: 1.5em;
+    padding: 0px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    margin-right: 20cm;
+}
+
+#inputDisplay {
+    font-size: 1em;
+    color: #555;
+}
+
+#outputDisplay {
+    margin-right: 2%;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+/* Buttons Grid */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+}
+
+/* Button styling */
+button {
+    height: 50px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #ffdde1; /* Light baby pink */
+    color: black;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+/* Bounce effect on hover */
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+button:hover {
+    background: #ffb6c1; /* Soft pink hover */
+    box-shadow: 0px 4px 10px rgba(255, 105, 180, 0.5);
+    animation: bounce 0.3s ease-in-out;
+}
+
+/* Enter button with unique hover effect */
+.enter {
+    grid-column: span 2;
+    background: #ff85a2; /* Slightly darker pink */
+    color: white;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.enter:hover {
+    background: #ff6f91; /* Vibrant pink */
+    transform: scale(1.08);
+}
